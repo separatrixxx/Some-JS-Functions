@@ -14,9 +14,17 @@
 
   <p>Возможны разные реализации, в том числе удаляющая любые знаки, не приводимые к числу, до того, как встретит число</p>
   <p>Примеры: '45$' -> '45', 'qwerty34 -> '34', '72pt6' -> '72'</p>
-
   <input id="inputParseInt1" type="text" onchange="myPrs1()">
   <h3 id="resultParseInt1"></h3>
+
+  <h1>indexOf</h1>
+  <p>Ищет подстроку substr в строке str, начиная с позиции pos, и возвращает позицию, на которой располагается совпадение, либо -1 при отсутствии совпадений.</p>
+  <p>Примеры: 'Mama'.indexOf('M') -> '0', 'Mama'.indexOf('R') -> '-1', 'Mama'.indexOf('ma') -> '2'</p>
+  <p>Необязательный второй аргумент позволяет начать поиск с определённой позиции.</p>
+  <p>Примеры: 'MAMA'.indexOf('M', 2) -> '2'</p>
+  <p>Введите основную строку и нажмите Enter:</p>
+  <input id="inputIndexOf" type="text" onchange="myInd()">
+  <h3 id="resultIndexOf"></h3>
 
   <script src="lib/script.js"></script>  
 
@@ -25,13 +33,21 @@
     function myPrs() {
       let val = document.getElementById('inputParseInt').value;
 
-       document.getElementById("resultParseInt").innerHTML = myParseInt(val);
+      document.getElementById("resultParseInt").innerHTML = myParseInt(val);
     }
 
     function myPrs1() {
       let val = document.getElementById('inputParseInt1').value;
 
-       document.getElementById("resultParseInt1").innerHTML = myParseInt1(val);
+      document.getElementById("resultParseInt1").innerHTML = myParseInt1(val);
+    }
+
+    function myInd() {
+      let substr = prompt("Введите подстроку, позицию которой нужно найти: ", "");
+
+      let str = document.getElementById('inputIndexOf').value;
+
+      document.getElementById("resultIndexOf").innerHTML = myIndexOf(str, substr);
     }
 
   
