@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="lib/style.css">
+</head>
+
+<body>
+
+  <h1>parseInt</h1>
+  <p>Преобразует строку в число, убирая знаки после числа. Когда встречает первый знак, который невозможно преобразовать в число, останавливает выполнение программы</p>
+  <p>Примеры: '45$' -> '45', 'qwerty34 -> ':(', '72pt6' -> '72'</p>
+  <input id="inputParseInt" type="text" onchange="myPrs()">
+  <h3 id="resultParseInt"></h3>
+
+  <p>Возможны разные реалзации, в том числе удаляющая любые знаки, не приводимые к числу, до того, как встретит число</p>
+  <p>Примеры: '45$' -> '45', 'qwerty34 -> '34', '72pt6' -> '72'</p>
+
+  <input id="inputParseInt1" type="text" onchange="myPrs1()">
+  <h3 id="resultParseInt1"></h3>
+
+  <script src="lib/script.js"></script>  
+
+  <script>
+
+    function myPrs() {
+      let val = document.getElementById('inputParseInt').value;
+
+       document.getElementById("resultParseInt").innerHTML = myParseInt(val);
+    }
+
+    function myPrs1() {
+      let val = document.getElementById('inputParseInt1').value;
+
+       document.getElementById("resultParseInt1").innerHTML = myParseInt1(val);
+    }
+
+  
+  </script>
+</body>
+
+</html>
