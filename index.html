@@ -26,32 +26,7 @@
   <input id="inputIndexOf" type="text" onchange="myInd()">
   <h3 id="resultIndexOf"></h3>
 
-  <script src="lib/script.js"></script>  
-
-  <script>
-
-    function myPrs() {
-      let val = document.getElementById('inputParseInt').value;
-
-      document.getElementById("resultParseInt").innerHTML = myParseInt(val);
-    }
-
-    function myPrs1() {
-      let val = document.getElementById('inputParseInt1').value;
-
-      document.getElementById("resultParseInt1").innerHTML = myParseInt1(val);
-    }
-
-    function myInd() {
-      let substr = prompt("Введите подстроку, позицию которой нужно найти: ", "");
-
-      let str = document.getElementById('inputIndexOf').value;
-
-      document.getElementById("resultIndexOf").innerHTML = myIndexOf(str, substr);
-    }
-
-  
-  </script>
+  <script src="lib/script.js"></script>
 </body>
 
 </html>
