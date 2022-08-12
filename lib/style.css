@@ -1,0 +1,22 @@
+body {
+  background-color: #c4dbff;
+  padding: 10px;
+}
+
+h1 {
+  color: #03255c;
+}
+
+h3, p {
+  color: #0e387d;
+}
+
+#inputParseInt, #inputParseInt1 {
+  height: 30px;
+  width: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #e6efff;
+  border: none;
+  border-radius: 15px;
+}
