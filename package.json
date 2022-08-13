@@ -1,0 +1,12 @@
+{
+  "name": "some_js_functions",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+
+  },
+  "scripts": {
+    "start": "",
+    "build": ""
+  }
+}
