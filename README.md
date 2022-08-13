@@ -9,3 +9,13 @@
 parseInt();
 
 indexOf();
+
+at();
+
+pop();
+
+push();
+
+shift();
+
+unshift();
