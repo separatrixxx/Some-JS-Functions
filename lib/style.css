@@ -57,7 +57,7 @@ div.betternet-wrapper {
   visibility: hidden;
 }
 
-#inputParseInt, #inputParseInt1, #inputIndexOf {
+input {
   height: 30px;
   width: 200px;
   padding-left: 10px;
