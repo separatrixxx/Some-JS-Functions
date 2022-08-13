@@ -1,14 +1,60 @@
 body {
-  background-color: #c4dbff;
-  padding: 10px;
+  background-color: #f0db4f;
+  font-family: "SF UI Display", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
-h1 {
-  color: #03255c;
+body::-webkit-scrollbar {
+  width: 9px;
 }
 
-h3, p {
-  color: #0e387d;
+body::-webkit-scrollbar-track {
+  background-color: #f0db4f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #323330;
+  border-radius: 30px;
+}
+
+h1, h3 {
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: medium;
+}
+
+p#by {
+  font-size: small;
+}
+
+a {
+  color: white;
+  transition: all 0.8s ease 0s;
+}
+
+a:hover {
+  color: #b1b0b0;
+}
+
+div {
+  background: #323330;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+footer {
+  background: #323330;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+div.betternet-wrapper {
+  visibility: hidden;
 }
 
 #inputParseInt, #inputParseInt1, #inputIndexOf {
@@ -16,7 +62,7 @@ h3, p {
   width: 200px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #e6efff;
+  background-color: white;
   border: none;
   border-radius: 15px;
 }
