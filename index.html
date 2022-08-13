@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+  <meta charset="utf-8" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" />
+  <title>Some JS Functions</title>
 <head>
     <link rel="stylesheet" href="lib/style.css">
 </head>
 
 <body>
 
-  <h1>parseInt</h1>
-  <p>Преобразует строку в число, убирая знаки после числа. Когда встречает первый знак, который невозможно преобразовать в число, останавливается</p>
-  <p>Примеры: '45$' -> '45', 'qwerty34 -> ':(', '72pt6' -> '72'</p>
-  <input id="inputParseInt" type="text" onchange="myPrs()">
-  <h3 id="resultParseInt"></h3>
+  <div>
+    <h1>parseInt</h1>
+    <p>Преобразует строку в число, убирая знаки после числа. Когда встречает первый знак, который невозможно преобразовать в число, останавливается</p>
+    <p>В случае, если выполнить преобразование не удалось, выводит NaN</p>
+    <p>Примеры: '45$' -> '45', 'qwerty34 -> 'NaN', '72pt6' -> '72'</p>
+    <input id="inputParseInt" type="text" onchange="myPrs()">
+    <h3 id="resultParseInt"></h3>
+    <p>Возможны разные реализации, в том числе удаляющая любые знаки, не приводимые к числу, до того, как встретит число</p>
+    <p>Примеры: '45$' -> '45', 'qwerty34 -> '34', '72pt6' -> '72'</p>
+    <input id="inputParseInt1" type="text" onchange="myPrs1()">
+    <h3 id="resultParseInt1"></h3>
+  </div>
 
-  <p>Возможны разные реализации, в том числе удаляющая любые знаки, не приводимые к числу, до того, как встретит число</p>
-  <p>Примеры: '45$' -> '45', 'qwerty34 -> '34', '72pt6' -> '72'</p>
-  <input id="inputParseInt1" type="text" onchange="myPrs1()">
-  <h3 id="resultParseInt1"></h3>
+  <div>
+    <h1>indexOf</h1>
+    <p>Ищет подстроку substr в строке str, начиная с позиции pos, и возвращает позицию, на которой располагается совпадение, либо -1 при отсутствии совпадений.</p>
+    <p>Примеры: 'Mama'.indexOf('M') -> '0', 'Mama'.indexOf('R') -> '-1', 'Mama'.indexOf('ma') -> '2'</p>
+    <p>Необязательный второй аргумент позволяет начать поиск с определённой позиции.</p>
+    <p>Примеры: 'MAMA'.indexOf('M', 2) -> '2'</p>
+    <p>Введите основную строку и нажмите Enter:</p>
+    <input id="inputIndexOf" type="text" onchange="myInd()">
+    <h3 id="resultIndexOf"></h3>
+  </div>
 
-  <h1>indexOf</h1>
-  <p>Ищет подстроку substr в строке str, начиная с позиции pos, и возвращает позицию, на которой располагается совпадение, либо -1 при отсутствии совпадений.</p>
-  <p>Примеры: 'Mama'.indexOf('M') -> '0', 'Mama'.indexOf('R') -> '-1', 'Mama'.indexOf('ma') -> '2'</p>
-  <p>Необязательный второй аргумент позволяет начать поиск с определённой позиции.</p>
-  <p>Примеры: 'MAMA'.indexOf('M', 2) -> '2'</p>
-  <p>Введите основную строку и нажмите Enter:</p>
-  <input id="inputIndexOf" type="text" onchange="myInd()">
-  <h3 id="resultIndexOf"></h3>
+  <footer>
+    <p>Some JS Functions</p>
+    <p id="by">by <span><a href="https://github.com/separatrixxx/Some-JS-Functions" target="_blank">separatrix</a></span></p>
+  </footer>
 
   <script src="lib/script.js"></script>
 </body>
