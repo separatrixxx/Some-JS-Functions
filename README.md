@@ -1,4 +1,4 @@
-# Some-JS-Functions
+# Some JS Functions
 
 ## Реализация некоторых программных функций и методов языка JavaScript
 
