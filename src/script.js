@@ -52,6 +52,18 @@ function myUnshft() {
   document.getElementById("resultUnshift").innerHTML = "Возвращённое значение (длина массива): " + arr.myUnshift(valUnshift) + " Изменившийся массив: " + arr;;
 }
 
+function myConcat() {
+  let numConcat = +prompt("Введите количество аргументов, которые нужно будет добавить: ", "");
+  let valConcat = [];
+
+  for (let i = 0; i < numConcat; i++) {
+    valConcat.push(prompt("Введите добавляемый аргумент: ", ""));
+  }
+
+  document.getElementById("resultConcat").innerHTML =
+      document.getElementById("inputConcat").value.myConcat(...valConcat);
+}
+
 //Реализация parseInt();
 function myParseInt(str) {
   let strLen = str.length;
@@ -199,3 +211,13 @@ Array.prototype.myUnshift = function () {
   }
   return this.length;
 };
+
+//Реализация concat();
+String.prototype.myConcat = function (...args) {
+  let result = '';
+  for (let arg of args) {
+    result += arg;
+  }
+
+  return this + result;
+}
