@@ -64,6 +64,13 @@ function myConcat() {
       document.getElementById("inputConcat").value.myConcat(...valConcat);
 }
 
+function myRepeat() {
+  let numRepeat = +prompt("Введите, сколько раз нужно повторить строку: ", "");
+
+  document.getElementById("resultRepeat").innerHTML =
+      document.getElementById("inputRepeat").value.myRepeat(numRepeat);
+}
+
 //Реализация parseInt();
 function myParseInt(str) {
   let strLen = str.length;
@@ -220,4 +227,14 @@ String.prototype.myConcat = function (...args) {
   }
 
   return this + result;
+}
+
+//Реализация repeat();
+String.prototype.myRepeat = function (num) {
+  let result = '';
+  for (let i = 0; i < num; i++) {
+    result += this;
+  }
+
+  return result;
 }
