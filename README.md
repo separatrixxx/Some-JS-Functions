@@ -6,20 +6,20 @@
 
 ### На данный момент реализованы:
 
-1) parseInt();
+1. parseInt();
 
-2) indexOf();
+2. indexOf();
 
-3) at();
+3. at();
 
-4) pop();
+4. pop();
 
-5) push();
+5. push();
 
-6) shift();
+6. shift();
 
-7) unshift();
+7. unshift();
 
-8) concat();
+8. concat();
 
-9) repeat();
+9. repeat();
